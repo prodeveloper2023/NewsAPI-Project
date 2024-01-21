@@ -17,6 +17,7 @@ const fetchNews = () => {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       // Display the fetched articles
       displayArticles(data);
       // Save the current keyword to localStorage
